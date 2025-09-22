@@ -1,0 +1,4 @@
+flask
+dotenv
+openpyxl
+flask-jwt-extended

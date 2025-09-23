@@ -3,9 +3,10 @@ Application Root
 """
 
 from flask import Flask
+from flask_cors import CORS
 
 # Configurations
-from config.config import PORT, DEBUG_MODE
+from config.config import PORT, DEBUG_MODE, FRONTEND_URL
 
 # Routing
 from routes.nav import nav_bp
@@ -15,7 +16,7 @@ from routes.crud import crud_bp
 
 # Application
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": FRONTEND_URL}})
 
 # Routing
 app.register_blueprint(nav_bp, url_prefix="/")

@@ -6,8 +6,8 @@ This is a sample **Human Resource** tracker web application, that leverages **MS
 
 For this project, we are to make use of the following technologies:
 
-1. A `python` framework (such as **Flask**) for the backend development.
-2. **MS Excel** as the database, integrated with the `python` framwework.
+1. A `python` framework (i.e. **Flask**) for the backend development.
+2. **MS Excel** as the database, integrated with the `python` framework.
 3. **React.js** for the frontend development.
 
 ---

@@ -71,27 +71,3 @@ def delete_employee(emp_id):
             return {"message": f"Deleted Employee {emp_id}"}
 
     return {"message": f"Employee {emp_id} not found."}
-
-
-# Driver
-if __name__ == "__main__":
-    initialize_excel()
-
-    create_employee(
-        [1, "Alice", "Smith", "1990-01-01", "1234-5678-9012", "ABCDE1234F", "DL-001"]
-    )
-    create_employee(
-        [2, "Bob", "Johnson", "1985-05-12", "4321-8765-2109", "FGHIJ5678K", None]
-    )
-
-    print("\nAll records :")
-    for emp in read_all():
-        print(emp)
-
-    update_employee(2, {"PAN": "NEWPAN9999L"})
-
-    delete_employee(1)
-
-    print("\nLatest records :")
-    for emp in read_all():
-        print(emp)

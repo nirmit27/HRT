@@ -12,6 +12,8 @@ load_dotenv()
 # Environment Variables
 PORT = environ["PORT"] or 5000
 DEBUG_MODE = True if environ["DEBUG_MODE"] == "True" else False
+FRONTEND_URL = environ["FRONTEND_URL"]
+
 JWT_SECRET_KEY = environ["JWT_SECRET_KEY"]
 JWT_BLACKLIST_ENABLED = True if environ["JWT_BLACKLIST_ENABLED"] else False
 
